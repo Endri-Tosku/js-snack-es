@@ -19,9 +19,22 @@ const cars = [
   { marca: "Volkswagen", modello: "Up!", alimentazione: "metano" }
 ];
 
-
+// BENZINA
 let benzina = cars.filter(cars => cars.alimentazione === "benzina")
 
 console.log(benzina);
+
+
+// DIESEL
+let diesel = cars.filter(cars => cars.alimentazione === "diesel")
+
+console.log(diesel);
+
+
+// TUTTE LE ALTRE AUTO
+let otherCars = cars.filter(cars => cars.alimentazione !== "diesel" && cars.alimentazione !== "benzina")
+
+console.log(otherCars);
+
 
 
